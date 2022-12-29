@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427231688281",
+    "project_id": "silentapp-4cc21",
+    "storage_bucket": "silentapp-4cc21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427231688281:android:91e1182c378a5ccb632348",
+        "android_client_info": {
+          "package_name": "com.donotdisturb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427231688281-tnajgnkur8ia415qkk657kuicqf290ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP4eYs0PzzKkYYJocS6n1xuX8fZ_nOvDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427231688281-tnajgnkur8ia415qkk657kuicqf290ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
