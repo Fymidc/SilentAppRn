@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import {
   SafeAreaView,
@@ -22,10 +22,17 @@ import {
 
 } from 'react-native/Libraries/NewAppScreen';
 import HomeScreen from './screens/HomeScreen';
+import SplashScreen from 'react-native-splash-screen'
 
 
 
 const App= () => {
+
+  useEffect(() => {
+    SplashScreen.hide()
+  }, [])
+  
+
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
