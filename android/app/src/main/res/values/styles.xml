@@ -7,5 +7,10 @@
     </style>
     <style name="DatePickerTheme" parent="DatePickerBaseTheme">
     <item name="android:colorControlNormal">#FFA500</item>
+
+</style>
+<style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+
 </style>
 </resources>

@@ -10,19 +10,17 @@ import React from 'react';
 
 import {
   SafeAreaView,
-  ScrollView,
-  StatusBar,
+
   StyleSheet,
-  Text,
+ 
   useColorScheme,
-  View,
+ 
 } from 'react-native';
 
 import {
   Colors,
 
 } from 'react-native/Libraries/NewAppScreen';
-import Second from './screens/Second';
 import HomeScreen from './screens/HomeScreen';
 
 
@@ -36,10 +34,7 @@ const App= () => {
 
   return (
     <SafeAreaView style={styles.container} >
-    
       <HomeScreen/>
-
-
     </SafeAreaView>
   );
 };

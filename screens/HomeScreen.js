@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, AppRegistry } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Header from '../components/Header';
 import Timer from '../components/Timer';
@@ -11,6 +11,7 @@ import {
   requestDndAccess,
   getRingerMode,
 } from 'react-native-ringer-mode';
+import AdvertisementArea from '../components/AdvertisementArea';
 
 const modeText = {
   [RINGER_MODE.silent]: 'Silent',
@@ -18,26 +19,36 @@ const modeText = {
   [RINGER_MODE.vibrate]: 'Vibrate',
 };
 
-//const BannerCode = (Platform.OS == "android") && "ca-app-pub-2976719493824952/9759891245" 
 
+//const BannerCode = (Platform.OS == "android") && "ca-app-pub-2976719493824952/9759891245" 
 
 const HomeScreen = () => {
   const [currenttime, setcurrenttime] = useState(moment().format("HH:mm"))
- // const [time, setTime] = useState('');
-  const [mode, setMode] = useState(RINGER_MODE.normal)
+  const { mode, error, setMode } = useRingerMode();
+
   const [date, setDate] = useState(new Date())
 
 
   const MINUTE_MS = 60000;
+
+  const time1 = moment(currenttime, "HH:mm")
+  const time2 = moment(son, "HH:mm")
+  const subtract = time2.diff(time1);
+  
+  
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
       setcurrenttime(moment().format("HH:mm"))
 
     }, MINUTE_MS);
+ 
     if (currenttime == son) {
       setMode(RINGER_MODE.normal)
     }
+    
 
     (async () => {
       try {
@@ -47,25 +58,13 @@ const HomeScreen = () => {
         console.error(error);
       }
     });
-
+   
     return () => clearInterval(interval)
 
   }, [currenttime])
 
-
-
+ 
   const son = date.toLocaleTimeString('it-IT').slice(0,5)
-  // const time1 = moment(ilk, "HH:mm")
-  //const time2 = moment(son, "HH:mm")
-  // const subtract = time2.diff(time1);
-  //let format = moment(subtract).format("hh:mm")
-  // console.log("fark",moment.duration(subtract).asMilliseconds()); //08:56:45
-  //console.log("current time", currenttime)
-
-
-  //const { mode, error, setMode } = useRingerMode();
-
-  //console.log("timer compdan gelen",son)
 
   const changeMode = async (newMode) => {
 
@@ -77,8 +76,7 @@ const HomeScreen = () => {
         const hasDndAccess = await checkDndAccess();
 
         if (hasDndAccess === false) {
-          // This function opens the DND settings.
-          // You can ask user to give the permission with a modal before calling this function.
+          
           requestDndAccess();
           return;
         }
@@ -86,16 +84,11 @@ const HomeScreen = () => {
 
       }
     } else if (currenttime > son) {
-      alert("you cant choose before current time")
+      alert("You can't choose before current time")
     }
 
 
   };
-
-  //seçimlerde ağırlık var deneme yap apk dan sonra
-
-
-
 
 
 
@@ -144,7 +137,7 @@ const HomeScreen = () => {
           </View>
 
         </View>
-       
+       <AdvertisementArea/>
       </ImageBackground>
     </View>
   )
@@ -172,10 +165,4 @@ const styles = StyleSheet.create({
 export default HomeScreen
 
 //text and icons color #00D9F6,
-//
-
-//font family ekle
-//firebase den reklam ekle
-//splash screen için image bul
-//apk relesase ve test
-
+//splash color 192131 

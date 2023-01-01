@@ -1,19 +1,33 @@
 import { View, Text, Platform } from 'react-native'
-import React from 'react'
-import { BannerAd , BannerAdSize ,TestIds} from '@react-native-firebase/admob'
+import React, { useEffect } from 'react'
+import { AppOpenAd, InterstitialAd, RewardedAd, BannerAd, TestIds,AdEventType, BannerAdSize } from 'react-native-google-mobile-ads';
 
-const BannerCode = (Platform.OS == "android") ? "ca-app-pub-2976719493824952/9759891245" : ""
+
+AppOpenAd.createForAdRequest(TestIds.APP_OPEN);
+
+InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL);
+
+RewardedAd.createForAdRequest(TestIds.REWARDED);
+
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-2976719493824952~9472116634';
+
+
+//const BannerCode = (Platform.OS == "android") ? "ca-app-pub-2976719493824952/9759891245" : ""
 const AdvertisementArea = () => {
+
+ 
+  
+
   return (
-    <View style={{height:50,width:"100%",backgroundColor:"grey"}} >
-     <BannerAd 
-      unitId={TestIds.BANNER}
-      size = {BannerAdSize.SMART_BANNER}
-      requestOptions={{
-        requestNonPersonalizedAdsOnly:true
-      }}
-     />
-    </View>
+   
+    <BannerAd
+    unitId={adUnitId}
+    size={BannerAdSize.FULL_BANNER}
+    requestOptions={{
+      requestNonPersonalizedAdsOnly: true,
+    }}
+  />
+   
   )
 }
 
