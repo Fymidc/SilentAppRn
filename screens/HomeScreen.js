@@ -96,7 +96,6 @@ const HomeScreen = () => {
     <View style={styles.container} >
       <ImageBackground style={styles.image} source={require('../assets/images/backround.png')} >
         <Header />
-        <Text style={{ color: "white" }} >Ringer Mode: {mode !== undefined ? modeText[mode] : null}</Text>
         <View style={styles.timercontainer} >
 
           <Text style={{ color: "orange",fontSize:16,fontFamily:"LuckiestGuy-Regular",letterSpacing:2 }} >From  {currenttime}     To  {son}</Text>
