@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "donotDisturb.app"
-               BlueprintName = "donotDisturb"
-               ReferencedContainer = "container:donotDisturb.xcodeproj">
+               BuildableName = "fdonotdisturb.app"
+               BlueprintName = "fdonotdisturb"
+               ReferencedContainer = "container:fdonotdisturb.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "donotDisturbTests.xctest"
-               BlueprintName = "donotDisturbTests"
-               ReferencedContainer = "container:donotDisturb.xcodeproj">
+               BuildableName = "fdonotdisturbTests.xctest"
+               BlueprintName = "fdonotdisturbTests"
+               ReferencedContainer = "container:fdonotdisturb.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "donotDisturb.app"
-            BlueprintName = "donotDisturb"
-            ReferencedContainer = "container:donotDisturb.xcodeproj">
+            BuildableName = "fdonotdisturb.app"
+            BlueprintName = "fdonotdisturb"
+            ReferencedContainer = "container:fdonotdisturb.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "donotDisturb.app"
-            BlueprintName = "donotDisturb"
-            ReferencedContainer = "container:donotDisturb.xcodeproj">
+            BuildableName = "fdonotdisturb.app"
+            BlueprintName = "fdonotdisturb"
+            ReferencedContainer = "container:fdonotdisturb.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
