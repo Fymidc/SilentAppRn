@@ -9,9 +9,8 @@
 [![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/badge_new.png)](https://play.google.com/store/apps/details?id=com.fdonotdisturb)
 
 Screenshots of the app :
-![splash screen](https://user-images.githubusercontent.com/60707082/211377147-b9371e9b-b773-4ea0-addb-92dab2c1cc2e.png)
+![silent-app](https://user-images.githubusercontent.com/60707082/211377881-e5360967-de4f-442b-a7f5-cac9f70dded2.jpg)
 
-![Screenshot_1672573323](https://user-images.githubusercontent.com/60707082/211377140-e8157145-28fb-4b06-8eb6-723f5c841a00.png)
 
 
 ## License
